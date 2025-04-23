@@ -2,7 +2,7 @@ import img1 from "../assets/logo.png";
 function Footer() {
   return (
     <footer className="bg-indigo-600 text-white py-8">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 max-w-screen-lg min-w-[375px]">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Company Logo & Description */}
           <div className="mb-6 md:mb-0">
