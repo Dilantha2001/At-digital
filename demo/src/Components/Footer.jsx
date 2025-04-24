@@ -23,7 +23,7 @@ function Footer() {
 
           {/* Right Section: Technologies & Services */}
 
-          <div className="flex flex-col flex-1 md:flex-row md:gap-25 gap-10 justify-end w-full text-left">
+          <div className="flex flex-col flex-1 md:flex-row gap-10 md:gap-15 justify-end w-full text-left">
             <div className="flex flex-col">
               <h2 className="text-[21px] font-semibold">Technologies</h2>
               <ul className="mt-2 text-white">
