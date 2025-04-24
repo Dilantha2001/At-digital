@@ -36,7 +36,7 @@ function Navbar() {
       {/* Toggle Button - same icon position, changes appearance */}
       <button
         onClick={Menuetoggle}
-        className="absolute top-4 right-4 z-50 text-white font-bold bg-indigo-600  md:bg-indigo-600 p-2 rounded md:hidden"
+        className="fixed top-4 right-4 z-50 text-white bg-indigo-600  md:bg-indigo-600 p-2 rounded md:hidden"
       >
         <svg
           fill="none"

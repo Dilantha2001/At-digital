@@ -4,9 +4,9 @@ function Footer() {
     <footer className="bg-indigo-600 text-white py-8 font-inter">
       <div className="container mx-auto px-6 w-full max-w-[1140px] min-w-[375px] flex flex-col">
         {/* Flexbox Layout */}
-        <div className="flex flex-col md:flex-row justify-between w-full items-start">
+        <div className="flex flex-col   md:flex-row justify-between w-full items-start">
           {/* Left Section: Company Info */}
-          <div className="mb-6 md:mb-0 flex-1 flex flex-col text-left">
+          <div className="mb-6 md:mb-0 flex-2 flex flex-col text-left">
             <div className="md:w-[226px] md:h-[49.62px] w-[152px] h-[33.37px]  ">
               <img
                 className="w-full h-full object-contain"
@@ -22,7 +22,8 @@ function Footer() {
           </div>
 
           {/* Right Section: Technologies & Services */}
-          <div className="flex flex-col md:flex-row gap-10 justify-start w-full text-left">
+
+          <div className="flex flex-col flex-1 md:flex-row md:gap-25 gap-10 justify-end w-full text-left">
             <div className="flex flex-col">
               <h2 className="text-[21px] font-semibold">Technologies</h2>
               <ul className="mt-2 text-white">
@@ -33,7 +34,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-1 flex-col">
               <h2 className="text-[21px] font-semibold"> Our Services</h2>
               <ul className="mt-2 text-white">
                 <li>Social Media Marketing</li>
