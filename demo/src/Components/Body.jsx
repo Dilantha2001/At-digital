@@ -1,31 +1,9 @@
 import hero from "../assets/hero.png";
 import img1 from "../assets/image2.png";
 import img2 from "../assets/image1.png";
+import Faq from "./Faq";
 
-import { useState } from "react";
 function Body() {
-  const handleToggle = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const faqs = [
-    {
-      question: "What is Webflow and why is it the best website builder?",
-      answer:
-        "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.",
-    },
-    {
-      question: "How does Webflow help with responsive design?",
-      answer:
-        "Webflow’s visual designer lets you build responsive websites without code, adjusting layouts for desktop, tablet, and mobile seamlessly.",
-    },
-    {
-      question: "Is Webflow good for SEO?",
-      answer:
-        "Yes, Webflow offers built-in SEO tools, clean code, and fast loading which are all great for search engine optimization.",
-    },
-  ];
   return (
     <div className="m-0 flex flex-col min-w-[375px]">
       <div className="relative">
@@ -57,7 +35,7 @@ function Body() {
         </div>
       </div>
 
-      <div className="w-full px-4 mt-[10px] md:mt-[80px] flex justify-center">
+      <div className="w-full px-4 mt-[20px] md:mt-[80px] flex justify-center">
         <div className="bg-white w-full max-w-6xl flex flex-col md:flex-row rounded-lg  p-4 sm:p-6 items-center">
           {/* Image Section */}
           <div className="w-full max-w-[275px] mb-6 md:mb-0 md:mr-6">
@@ -117,43 +95,7 @@ function Body() {
           </div>
         </div>
       </div>
-
-      <div className="bg-white w-full flex flex-col mt-[20px] md:mt-[80px] items-center px-4">
-        <div className="bg-white w-full max-w-4xl flex flex-col p-4 sm:p-6 rounded-md shadow-sm">
-          {/* Title */}
-          <div className="flex justify-center items-center mb-6">
-            <h2 className=" text-[#4F46E5] text-[27px] sm:text-2xl font-bold text-center">
-              Frequently asked questions
-            </h2>
-          </div>
-
-          {/* FAQ List */}
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="flex flex-col bg-[#FAF8FF] p-4 mb-2 rounded-md"
-            >
-              <h3
-                onClick={() => handleToggle(index)}
-                className={`cursor-pointer select-none text-[18px] sm:text-[20px] flex justify-between items-center ${
-                  activeIndex === index ? "text-[#4F46E5]" : "text-black"
-                }`}
-              >
-                {faq.question}
-                <span className="text-[22px] ml-2">
-                  {activeIndex === index ? "-" : "+"}
-                </span>
-              </h3>
-
-              {activeIndex === index && (
-                <p className="mt-2 text-left text-sm sm:text-base text-gray-700 [font-family:'Inter']">
-                  {faq.answer}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
+      <Faq />
     </div>
   );
 }

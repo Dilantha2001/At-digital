@@ -14,7 +14,7 @@ function Navbar() {
       <nav className="bg-indigo-600 text-white p-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="md:w-[226px] md:h-[49.62px] w-[152px] h-[33.37px]">
+          <div className="md:w-[226px] md:h-[49.62px] w-[152px] h-[33.37px] ml-[15px]">
             <img
               className="w-full h-full object-contain"
               src={Logo}
