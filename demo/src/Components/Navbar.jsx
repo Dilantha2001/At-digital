@@ -9,11 +9,11 @@ function Navbar() {
   };
 
   return (
-    <>
+    <div className="min-w-[375px] overflow-x-auto">
       {/* Navbar */}
       <nav className="bg-indigo-600 text-white p-4">
         <div className="flex items-center justify-between">
-          <div className="w-30 h-15 bg-red-500 ">
+          <div className="w-30 h-15 bg-red-500">
             <img
               className="w-full h-full object-contain"
               src={img1}
@@ -40,6 +40,7 @@ function Navbar() {
         </div>
       </nav>
 
+      {/* Toggle button */}
       <button
         onClick={Menuetoggle}
         className="fixed top-4 right-4 z-50 text-white bg-indigo-700 p-2 rounded md:hidden"
@@ -56,12 +57,13 @@ function Navbar() {
         </svg>
       </button>
 
+      {/* Sidebar menu */}
       {isopen && (
         <aside
           className={`fixed top-0 right-0 w-full h-full bg-white 
-       transition-transform duration-[2000ms] ease-in-out transform 
-       ${isopen ? "translate-x-0" : "translate-x-full"} 
-       z-40 md:hidden p-4`}
+            transition-transform duration-[2000ms] ease-in-out transform 
+            ${isopen ? "translate-x-0" : "translate-x-full"} 
+            z-40 md:hidden p-4`}
         >
           <ul className="flex flex-col space-y-4 text-black">
             <li>
@@ -92,7 +94,7 @@ function Navbar() {
           </ul>
         </aside>
       )}
-    </>
+    </div>
   );
 }
 
