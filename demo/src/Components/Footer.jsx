@@ -3,9 +3,7 @@ function Footer() {
   return (
     <footer className="bg-indigo-600 text-white py-8 font-inter">
       <div className="container mx-auto px-6 w-full max-w-[1140px] min-w-[375px] flex flex-col">
-        {/* Flexbox Layout */}
         <div className="flex flex-col   md:flex-row justify-between w-full items-start">
-          {/* Left Section: Company Info */}
           <div className="mb-6 md:mb-0 flex-2 flex flex-col text-left">
             <div className="md:w-[226px] md:h-[49.62px] w-[152px] h-[33.37px]  ">
               <img
@@ -20,8 +18,6 @@ function Footer() {
               business results.
             </p>
           </div>
-
-          {/* Right Section: Technologies & Services */}
 
           <div className="flex flex-col flex-1 md:flex-row gap-10 md:gap-15 justify-end w-full text-left">
             <div className="flex flex-col">
@@ -45,7 +41,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="mt-8 border-t pt-4 text-left text-white flex items-center justify-center text-[14px]">
           <p>Privacy Policy | Terms & Conditions</p>
         </div>

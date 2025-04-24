@@ -13,7 +13,6 @@ function Body() {
           alt="Home Wallpaper"
         />
 
-        {/* Content overlaid on desktop, stacked below on mobile */}
         <div
           className="
         relative md:absolute md:top-[46%] md:left-10 
@@ -42,7 +41,6 @@ function Body() {
             <img className="w-full h-auto object-cover" src={img1} alt="img1" />
           </div>
 
-          {/* Text Section */}
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
               Web & Mobile App Development

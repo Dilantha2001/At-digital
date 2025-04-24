@@ -32,7 +32,6 @@ function Faq() {
           </h2>
         </div>
 
-        {/* FAQ List */}
         {faqs.map((faq, index) => (
           <div
             key={index}
