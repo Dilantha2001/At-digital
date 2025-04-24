@@ -38,7 +38,7 @@ function Body() {
         {/* Content overlaid on desktop, stacked below on mobile */}
         <div
           className="
-        relative md:absolute md:top-[47%] md:left-10 
+        relative md:absolute md:top-[46%] md:left-10 
         bg-[linear-gradient(to_right,#4DCA79,#1CBDDD)] 
         z-10 p-6 sm:pt-[24px] pl-[20px] pr-[20px] pb-[32px] md:p-[24px] 
         w-full sm:w-full h-[294px] md:w-[630px]  
@@ -57,8 +57,8 @@ function Body() {
         </div>
       </div>
 
-      <div className="w-full px-4 mt-[200px] md:mt-[80px] flex justify-center">
-        <div className="bg-white w-full max-w-6xl flex flex-col md:flex-row rounded-lg shadow-md p-4 sm:p-6 items-center">
+      <div className="w-full px-4 mt-[10px] md:mt-[80px] flex justify-center">
+        <div className="bg-white w-full max-w-6xl flex flex-col md:flex-row rounded-lg  p-4 sm:p-6 items-center">
           {/* Image Section */}
           <div className="w-full max-w-[275px] mb-6 md:mb-0 md:mr-6">
             <img className="w-full h-auto object-cover" src={img1} alt="img1" />
@@ -86,8 +86,8 @@ function Body() {
         </div>
       </div>
 
-      <div className="w-full px-4 mt-[300px] md:mt-[80px] flex justify-center">
-        <div className="w-full max-w-6xl bg-white flex flex-col-reverse md:flex-row items-center rounded-lg shadow-md p-4 sm:p-6">
+      <div className="w-full px-4 mt-[20px] md:mt-[80px] flex justify-center">
+        <div className="w-full max-w-6xl bg-white flex flex-col-reverse md:flex-row items-center rounded-lg  p-4 sm:p-6">
           {/* Text Section */}
           <div className="flex-1 text-center md:text-left space-y-4 pt-6 md:pt-0">
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
@@ -118,11 +118,11 @@ function Body() {
         </div>
       </div>
 
-      <div className="bg-white w-full flex flex-col mt-[150px] md:mt-[80px] items-center px-4">
+      <div className="bg-white w-full flex flex-col mt-[20px] md:mt-[80px] items-center px-4">
         <div className="bg-white w-full max-w-4xl flex flex-col p-4 sm:p-6 rounded-md shadow-sm">
           {/* Title */}
           <div className="flex justify-center items-center mb-6">
-            <h2 className=" text-[#4F46E5] text-xl sm:text-2xl font-bold text-center">
+            <h2 className=" text-[#4F46E5] text-[27px] sm:text-2xl font-bold text-center">
               Frequently asked questions
             </h2>
           </div>

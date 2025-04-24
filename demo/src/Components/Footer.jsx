@@ -1,26 +1,30 @@
-import img1 from "../assets/logo.png";
+import Logo from "../assets/LOGO.png";
 function Footer() {
   return (
-    <footer className="bg-indigo-600 text-white py-8">
-      <div className="container mx-auto px-6 max-w-screen-lg min-w-[375px]">
-        <div className="flex flex-col md:flex-row justify-between">
-          {/* Company Logo & Description */}
-          <div className="mb-6 md:mb-0">
-            <div className="w-[100px] h-[100px]">
+    <footer className="bg-indigo-600 text-white py-8 font-inter">
+      <div className="container mx-auto px-6 w-full max-w-[1140px] min-w-[375px] flex flex-col">
+        {/* Flexbox Layout */}
+        <div className="flex flex-col md:flex-row justify-between w-full items-start">
+          {/* Left Section: Company Info */}
+          <div className="mb-6 md:mb-0 flex-1 flex flex-col text-left">
+            <div className="md:w-[226px] md:h-[49.62px] w-[152px] h-[33.37px]  ">
               <img
                 className="w-full h-full object-contain"
-                src={img1}
+                src={Logo}
                 alt="Logo"
               />
             </div>
-            <p className="mt-2 text-white-400">
-              Providing innovative solutions for modern problems.
+            <p className="mt-2 text-white/80 font-lato font-light text-[16px] w-full md:w-[413px]">
+              Your goal is our target. Not anything in between. We use online
+              marketing platforms and tools to achieve a single objective - your
+              business results.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <div>
-              <h2 className="text-xl font-semibold">Technologies</h2>
+          {/* Right Section: Technologies & Services */}
+          <div className="flex flex-col md:flex-row gap-10 justify-start w-full text-left">
+            <div className="flex flex-col">
+              <h2 className="text-[21px] font-semibold">Technologies</h2>
               <ul className="mt-2 text-white">
                 <li>ReactJS</li>
                 <li>Gatsby</li>
@@ -29,28 +33,20 @@ function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h2 className="text-xl font-semibold">Services</h2>
+            <div className="flex flex-col">
+              <h2 className="text-[21px] font-semibold"> Our Services</h2>
               <ul className="mt-2 text-white">
-                <li>Web Development</li>
-                <li>App Development</li>
-                <li>Data Analytics</li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold">Company</h2>
-              <ul className="mt-2 text-white">
-                <li>About Us</li>
-                <li>Careers</li>
-                <li>Contact</li>
+                <li>Social Media Marketing</li>
+                <li>Web & Mobile App Development</li>
+                <li>Data & Analytics</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t pt-4 text-center text-white">
-          <p>© 2025 Your Company. All rights reserved.</p>
+        {/* Footer Bottom */}
+        <div className="mt-8 border-t pt-4 text-left text-white flex items-center justify-center text-[14px]">
+          <p>Privacy Policy | Terms & Conditions</p>
         </div>
       </div>
     </footer>
