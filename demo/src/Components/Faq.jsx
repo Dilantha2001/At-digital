@@ -27,9 +27,9 @@ function Faq() {
       <div className="bg-white w-full max-w-4xl flex flex-col p-4 sm:p-6 rounded-md shadow-sm">
         {/* Title */}
         <div className="flex justify-center items-center mb-6">
-          <h2 className=" text-[#4F46E5] text-[27px] sm:text-2xl font-bold text-center">
+          <h3 className=" text-[#4F46E5] text-[27px] sm:text-2xl font-bold text-center font-poppins">
             Frequently asked questions
-          </h2>
+          </h3>
         </div>
 
         {faqs.map((faq, index) => (

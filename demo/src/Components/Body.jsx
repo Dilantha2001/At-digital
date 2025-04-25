@@ -33,63 +33,70 @@ function Body() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center items-center flex-col ">
+        <div className="w-full px-4 mt-5 md:mt-20 flex justify-center">
+          <div className="w-full max-w-6xl flex flex-col md:flex-row rounded-lg p-4 sm:p-6 items-center">
+            {/* Image Section */}
+            <div className="w-full md:w-[414px] h-auto mb-6 md:mb-0 md:mr-6 flex justify-center">
+              <img
+                className="w-full max-w-[414px] h-auto object-cover rounded"
+                src={img1}
+                alt="img1"
+              />
+            </div>
 
-      <div className="w-full px-4 mt-[20px] md:mt-[80px] flex justify-center">
-        <div className="bg-white w-full max-w-6xl flex flex-col md:flex-row rounded-lg  p-4 sm:p-6 items-center">
-          {/* Image Section */}
-          <div className="w-full max-w-[275px] mb-6 md:mb-0 md:mr-6">
-            <img className="w-full h-auto object-cover" src={img1} alt="img1" />
-          </div>
+            {/* Text Section */}
+            <div className="w-full md:w-[542px] text-center md:text-left flex flex-col justify-center space-y-4">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
+                Web & Mobile App Development
+              </h2>
 
-          <div className="flex-1 text-center md:text-left">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
-              Web & Mobile App Development
-            </h2>
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+                Your web and mobile Apps are pieces of the puzzle to grow your
+                business. We use frameworks which tailor content and engagement
+                methods to respond to different intents shown by your potential
+                customers who interact with your business online.
+              </p>
 
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-4">
-              Your web and mobile Apps are pieces of the puzzle to grow your
-              business. We use frameworks which tailor content and engagement
-              methods to respond to different intents shown by your potential
-              customers who interact with your business online.
-            </p>
-
-            <div className="flex justify-center md:justify-start">
-              <button className="bg-orange-500 px-6 py-2 text-white text-sm sm:text-base rounded">
-                LEARN MORE
-              </button>
+              <div className="flex justify-center md:justify-start">
+                <button className="bg-orange-500 text-white text-sm sm:text-base rounded w-[129px] h-[38px] hover:bg-orange-600 transition-all duration-300">
+                  LEARN MORE
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="w-full px-4 mt-[20px] md:mt-[80px] flex justify-center">
-        <div className="w-full max-w-6xl bg-white flex flex-col-reverse md:flex-row items-center rounded-lg  p-4 sm:p-6">
-          {/* Text Section */}
-          <div className="flex-1 text-center md:text-left space-y-4 pt-6 md:pt-0">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
-              Digital Strategy Consulting
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600">
-              Your digital strategy should complement the overall marketing
-              strategy of the company. In online marketing, each component will
-              never work in isolation and every business needs a different mix.
-              We provide a clear concept and strategic overview to find the most
-              efficient model for your business.
-            </p>
-            <div className="flex justify-center md:justify-start">
-              <button className="bg-orange-500 px-6 py-2 text-white text-sm sm:text-base rounded">
-                LEARN MORE
-              </button>
+        <div className="w-full px-4 mt-5 md:mt-20 flex justify-center">
+          <div className="w-full max-w-6xl bg-white flex flex-col-reverse md:flex-row items-center rounded-lg p-4 sm:p-6">
+            {/* Text Section */}
+            <div className="w-full md:w-[542px] text-center md:text-left space-y-4 pt-6 md:pt-0 flex flex-col justify-center">
+              <h2 className="text-lg sm:text-xl md:text-2xl text-[#4F46E5] font-semibold">
+                Digital Strategy Consulting
+              </h2>
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+                Your digital strategy should complement the overall marketing
+                strategy of the company. In online marketing, each component
+                will never work in isolation and every business needs a
+                different mix. We provide a clear concept and strategic overview
+                to find the most efficient model for your business.
+              </p>
+
+              <div className="flex justify-center md:justify-start">
+                <button className="bg-orange-500 text-white text-sm sm:text-base rounded w-[129px] h-[38px] hover:bg-orange-600 transition-all duration-300">
+                  LEARN MORE
+                </button>
+              </div>
             </div>
-          </div>
 
-          {/* Image Section */}
-          <div className="w-full max-w-[275px] mb-6 md:mb-0 md:ml-6">
-            <img
-              className="w-full h-auto object-contain"
-              src={img2}
-              alt="Digital Strategy"
-            />
+            {/* Image Section */}
+            <div className="w-full md:w-[414px] mb-6 md:mb-0 md:ml-6 flex justify-center">
+              <img
+                className="w-full max-w-[414px] h-auto object-contain"
+                src={img2}
+                alt="Digital Strategy"
+              />
+            </div>
           </div>
         </div>
       </div>
