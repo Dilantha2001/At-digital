@@ -1,3 +1,115 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=MonteCarlo&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Shippori+Antique&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Lato:wght@100;300;400;700;900&family=Matemasie&family=Rubik+Distressed&display=swap");
+:root {
+  --font-serif: 'Noto Serif Display', Georgia, serif;
+  --font-bilbo: 'Bilbo', cursive;
+  --font-montecarlo: 'MonteCarlo', cursive;
+  --font-body: 'Mulish', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-antique: 'Shippori Antique', 'Montserrat', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --bg-header: #dfdeda;
+  --bg-intro: rgba(244, 241, 236, 0.55);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #212121;
+  font-family: 'Mulish', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Editorial Cursor: hide default OS arrow on desktop devices */
+@media (hover: hover) and (pointer: fine) {
+  body,
+  a,
+  button,
+  [role="button"],
+  .cursor-pointer,
+  label {
+    cursor: none !important;
+  }
+}
+
+/* Headings default to authentic Whitney Rae Noto Serif Display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif Display', Georgia, serif;
+}
+
+/* Universal Typography Utility Classes */
+.font-noto-serif,
+.font-serif {
+  font-family: 'Noto Serif Display', Georgia, serif !important;
+}
+
+.font-mulish,
+.font-sans {
+  font-family: 'Mulish', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.font-antique {
+  font-family: 'Shippori Antique', 'Montserrat', sans-serif !important;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-montecarlo {
+  font-family: 'MonteCarlo', cursive !important;
+}
+
+.bilbo-regular,
+.font-bilbo {
+  font-family: 'Bilbo', cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Editorial letter-spacing tokens */
+.tracking-tight-title {
+  letter-spacing: -0.01em;
+}
+
+.tracking-eyebrow {
+  letter-spacing: 0.25em;
+}
+
+.tracking-subhead {
+  letter-spacing: 0.12em;
+}
+
+/* Custom Editorial Black Scrollbar */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #191816 #fbf9f6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf9f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #191816;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
