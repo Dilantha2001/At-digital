@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutIntro from './components/AboutIntro';
@@ -18,6 +19,25 @@ import FloatingActions from './components/FloatingActions';
 import CustomCursor from './components/CustomCursor';
 
 export default function App() {
+  // Always start at top of page on reload / initial render
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+    const handleReset = () => {
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('beforeunload', handleReset);
+    window.addEventListener('pageshow', handleReset);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleReset);
+      window.removeEventListener('pageshow', handleReset);
+    };
+  }, []);
   return (
     <div className="min-h-screen bg-[#dfdeda] text-[#212121] flex flex-col selection:bg-[#c9c2b8] selection:text-[#1e1b18]">
       {/* Luxury Black Arrow & Floating Fluid Bubble Cursor */}
